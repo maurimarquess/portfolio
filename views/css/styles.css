@@ -11,7 +11,7 @@ body {
 }
 
 #title {
-    font-size: 2vw;
+    font-size: 2rem;
     color: white;
     text-transform: uppercase;
 }
@@ -26,6 +26,36 @@ body {
 .navbar-nav .nav-link:hover {
     color: #f40000;
 }
+
+.nav-item.dropdown .nav-link {
+    color: white;
+    font-size: 1.2rem;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+.nav-item.dropdown .nav-link:hover {
+    color: #f40000;
+}
+
+.dropdown-menu {
+    background-color: #110e0e;
+    border: none;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.dropdown-item {
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    transition: color 0.3s ease;
+}
+
+.dropdown-item:hover {
+    color: #f40000;
+    background-color: transparent;
+}
+
 
 .row {
     display: flex;
