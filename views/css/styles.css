@@ -168,21 +168,60 @@ body {
     color: #f40000ad; /* Resalta el enlace al pasar el ratón */
 }
 
-.degree-name {
+.cabecera {
     font-size: 2rem; /* Tamaño más grande para el nombre del grado */
     font-weight: bolder;
 }
 
-.specialization {
+.subcabecera {
     font-size: 1.5rem; /* Tamaño para la especialización */
     color: #828080;
 }
 
-.year {
+.destacado {
     font-size: 1.2rem; /* Tamaño para el año */
     color: #f40000; /* Resalta el año con otro color */
     margin-top: 5px;
 }
+
+.download-btn {
+    display: inline-flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 25rem; /* Aumenta el tamaño del botón */
+    height: 10rem;
+    background-color: #f62424dd;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.8rem;
+    position: relative;
+    transition: background 0.3s ease;
+}
+
+.download-btn:hover {
+    background-color: #e42222;
+}
+
+.download-btn .arrow {
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 3rem;
+    transition: transform 0.3s ease;
+}
+
+
+.download-btn:hover .arrow {
+    transform: translateX(5px); /* Desplaza la flecha hacia la derecha */
+}
+
+
 
 @media (max-width: 991px) { /* Cambiar a 991px */
     .col-md-4 {
@@ -198,7 +237,7 @@ body {
         width: 60%;
     }
     .info {
-        margin-top: 180px;
+        margin-top: 180re,;
     }
     .d-flex {
         flex-wrap: wrap;
