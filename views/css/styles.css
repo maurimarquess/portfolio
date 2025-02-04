@@ -3,6 +3,7 @@ body {
     color: white;
     margin: 0;
     overflow-x: hidden; /* Oculta solo el scroll horizontal */
+    max-width: 100%;
 }
 
 .navbar {
