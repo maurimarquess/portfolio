@@ -188,7 +188,7 @@ body {
     display: inline-flex;
     align-items: flex-end;
     justify-content: space-between;
-    width: 25rem; /* Aumenta el tamaño del botón */
+    width: 20rem; /* Aumenta el tamaño del botón */
     height: 10rem;
     background-color: #f62424dd;
     color: white;
@@ -236,14 +236,19 @@ body {
     .profile-card img {
         width: 60%;
     }
-    .info {
-        margin-top: 180re,;
-    }
+    /* .info {
+        margin-top: 180rem,;
+    } */
     .d-flex {
         flex-wrap: wrap;
     }
 }
 
+@media (min-width: 753px) and (max-width: 991px) {
+    .info{
+        margin-top: 10rem;
+    }
+}
 
 @media (min-width: 991px) {
     .col-md-4 {
