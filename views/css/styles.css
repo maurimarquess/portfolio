@@ -222,7 +222,14 @@ body {
     transform: translateX(5px); /* Desplaza la flecha hacia la derecha */
 }
 
+#contact-form button{
+    background-color: #f40000;
+    border: none;
+}
 
+#contact-form button:hover{
+    background-color: #f40000aa;
+}
 
 @media (max-width: 991px) { /* Cambiar a 991px */
     .col-md-4 {

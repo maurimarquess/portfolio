@@ -18,3 +18,26 @@ document.querySelectorAll('a.nav-link, a.dropdown-item').forEach(anchor => {
         }
     });
 });
+
+document.getElementById("contact-form").addEventListener("submit", function(event) {
+    event.preventDefault(); // Evita la recarga de la página
+
+    const form = this;
+    const statusMsg = document.getElementById("status");
+
+    fetch("https://formspree.io/f/mdkadzpk", {
+        method: "POST",
+        body: new FormData(form),
+        headers: { "Accept": "application/json" }
+    }).then(response => {
+        if (response.ok) {
+            statusMsg.style.display = "block"; // Muestra mensaje de éxito
+            form.reset(); // Limpia el formulario
+            setTimeout(() => { statusMsg.style.display = "none"; }, 3000); // Oculta el mensaje después de 3s
+        } else {
+            alert("Error al enviar el mensaje. Intenta de nuevo.");
+        }
+    }).catch(error => {
+        alert("Ocurrió un error. Inténtalo más tarde.");
+    });
+});
